@@ -3,7 +3,13 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
   mode: 'development',
-  entry: './src/index.js',
+  entry: {
+    index: './src/index.js',
+    weather: './src/weather.js',
+    api: './src/api.js',
+    ui: './src/ui.js',
+    conversion: './src/conversion.js',
+  },
   devtool: 'inline-source-map',
   plugins: [new HtmlWebpackPlugin({
     title: 'Development',
@@ -13,9 +19,6 @@ module.exports = {
     filename: '[name].bundle.js',
     path: path.resolve(__dirname, 'dist'),
     clean: true,
-  },
-  optimization: {
-    runtimeChunk: 'single',
   },
   module: {
     rules: [

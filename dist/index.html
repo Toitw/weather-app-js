@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-<script defer src="runtime.bundle.js"></script><script defer src="main.bundle.js"></script></head>
+<script defer src="index.bundle.js"></script><script defer src="weather.bundle.js"></script><script defer src="api.bundle.js"></script><script defer src="ui.bundle.js"></script><script defer src="conversion.bundle.js"></script></head>
 <body>
     <nav>
         <h1>Weather App</h1>
@@ -17,7 +17,12 @@
         </div>
 
         <div class="weather-display">
-            <!-- Weather data will be displayed here -->
+            <h2 id="locationName"></h2>
+            <div class="weather-info">
+                <p id="temperature"></p>
+                <p id="weatherDescription"></p>
+            </div>
+            <p id="errorMessage" class="error-message"></p>
         </div>
     </main>
 </body>
