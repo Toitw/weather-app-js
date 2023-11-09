@@ -5,7 +5,6 @@ module.exports = {
   mode: 'development',
   entry: {
     index: './src/index.js',
-    weather: './src/weather.js',
     api: './src/api.js',
     ui: './src/ui.js',
     conversion: './src/conversion.js',
