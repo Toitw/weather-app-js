@@ -3,7 +3,7 @@ const API = {
   
     async fetchWeatherData(location) {
       try {
-        const response = await fetch(`http://api.weatherapi.com/v1/current.json?key=${this.apiKey}&q=${location}&aqi=no`);
+        const response = await fetch(`https://api.weatherapi.com/v1/current.json?key=${this.apiKey}&q=${location}&aqi=no`);
         if (!response.ok) {
           throw new Error('Weather data not available');
         }
