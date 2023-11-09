@@ -46,6 +46,7 @@ body {
   }
   
   .weather-display {
+    display: none;
     text-align: center;
     padding: 20px;
     border: 1px solid #ccc;
@@ -69,6 +70,11 @@ body {
   #locationName {
     font-size: 24px;
     margin-bottom: 10px;
+  }
+
+  img {
+    width: 100px;
+    height: 100px;
   }
   
   /* You might want to add more styles for different weather conditions and temperature displays */
